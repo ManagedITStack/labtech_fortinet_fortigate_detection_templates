@@ -1,0 +1,18 @@
+Create New Device Under "SNMP Device" called "SNMP Firewall - Fortigate"
+
+Template Configuration
+	Name: Test if Fortinet Firewall
+	Protocol: SNMP
+	Applies To: SNMP Device
+	Results In: SNMP Firewall - Fortigate
+	Targets: Network Devices
+
+	Device Type: Firewall
+	Manufacturer: Fortinet
+	Model: 
+
+	Template Rules
+		Rule Name: Test if Fortigate Firewall
+		Rule Type: Match Regular Expression
+		OID: 1.3.6.1.2.1.47.1.1.1.1.2.1
+		Regular Expression: ^Fortinet FGT

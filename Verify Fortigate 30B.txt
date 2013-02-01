@@ -1,0 +1,18 @@
+Create New Device Under "SNMP Firewall - Fortigate" called "Fortigate 30B"
+
+Template Configuration
+	Name: Verify Fortigate 30B
+	Protocol: SNMP
+	Applies To: SNMP Firewall - Fortigate
+	Results In: Fortigate 30B
+	Targets: Network Devices
+
+	Device Type: Firewall
+	Manufacturer: Fortinet
+	Model: 30B
+
+	Template Rules
+		Rule Name: Test if Fortinet 30B
+		Rule Type: Match Regular Expression
+		OID: 1.3.6.1.2.1.47.1.1.1.1.2.1
+		Regular Expression: ^Fortinet FGT_30B
