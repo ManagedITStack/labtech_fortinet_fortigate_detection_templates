@@ -1,0 +1,19 @@
+Template Configuration
+	Name: Fortigate Firewall Firmware
+	Apply To Device: SNMP Firewall - Fortigate
+
+	Targets: Network Devices
+
+
+Collection Rule
+	Rule Name: Firmware Version
+	Rule Type: Retrieve OID
+	Collection Interval: 1 Day
+	Historical Interval: <No Historical Collection>
+
+	Data Collection
+		OID: 1.3.6.1.4.1.12356.101.4.1.1.0
+		Name: Firmware Version
+
+	Response Interpretation
+		Parse As: Readable Text
